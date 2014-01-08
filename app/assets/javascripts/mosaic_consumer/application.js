@@ -1,11 +1,10 @@
 //= require jquery
-//= require handlebars
-//= require plinth/plugins/tbg-switch
-//= require showdown
-//= require ember
-//= require ember-data
+//= require ./handlebars
+//= require ./showdown
+//= require ./ember
+//= require ./ember-data
 //= require_self
-//= require mosaic
+//= require ./mosaic
 
 // for more details see: http://emberjs.com/guides/application/
 Mosaic = Ember.Application.create( 
