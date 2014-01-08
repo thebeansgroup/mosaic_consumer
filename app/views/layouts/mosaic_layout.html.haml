@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %title= "Mosaic"
+    = stylesheet_link_tag "application"
+    = stylesheet_link_tag "mosaic_consumer/mosaic"
+    :javascript
+      window.mosaic_api_url = "#{Rails.application.config.mosaic_api_url}";
+    = javascript_include_tag  "application"
+    = javascript_include_tag  "mosaic_consumer/application"
+  %body.page_classes
+    = yield
+
