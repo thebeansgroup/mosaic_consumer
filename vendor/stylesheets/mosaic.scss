@@ -1,0 +1,103 @@
+//
+// Mosaic Layout
+//
+
+html {
+  font-size: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(77, 77, 77);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, body > .ember-view {
+  background-color: rgb(32, 27, 33);
+  height: inherit;
+ }
+
+.navbar {
+  position: relative;
+  overflow: hidden;
+}
+
+.patterns-content {
+  height: inherit;
+  padding: 34px;
+  margin-left: 250px;
+  overflow-y: scroll;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar .navbar_list {
+  display: block;
+  position: fixed;
+  top: 180px;
+  bottom: 0px;
+  right: auto;
+  width: 250px;
+  overflow-y: scroll;
+  transition: all 0.2s cubic-bezier(0.7, 0, 0.175, 1) 0s;
+  -webkit-transition: all 0.2s cubic-bezier(0.7, 0, 0.175, 1) 0s;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+//
+// Navbar
+//
+
+$nav-bg: rgb(153, 153, 153) !default;
+$nav-bg-active: #FFF !default;
+$nav-text: #FFF !default;
+$nav-text-active: #777 !default;
+
+.navbar_list{
+  list-style: none;
+  background-color: $nav-bg;
+}
+
+.navbar a {
+  display: block;
+  padding: 14px 24px;
+  overflow: hidden;
+  border: none;
+  color: $nav-text;
+  font-size: 21px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  background-color: $nav-bg-active;
+  color: $nav-text-active;
+}
+
+//
+// Pattern
+//
+
+.pattern {
+  color: rgb(32, 27, 33);
+  margin: 34px 0px 68px;
+
+  .pattern_example {
+    margin: 26px 0px;
+    padding: 21px;
+    border: 1px dotted rgb(32, 27, 33);
+  }
+
+  .pattern_haml_content {
+    padding: 16px
+  }
+
+}
